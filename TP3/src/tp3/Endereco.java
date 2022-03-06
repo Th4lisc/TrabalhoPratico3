@@ -3,12 +3,12 @@ package tp3;
 public class Endereco {
 
 	// Atributos Endereco
-		private int cep;
-		private String pais;
-		private String estado;
-		private String bairro;
-		private String ruaQuadra;
-		private int numero;
+	private int cep;
+	private String pais;
+	private String estado;
+	private String bairro;
+	private String ruaQuadra;
+	private int numero;
 		
 	// Construtor
 	public Endereco(int cep, String pais, String estado, String bairro, String ruaQuadra, int numero) {
