@@ -18,6 +18,10 @@ public class Estacao {
 	}
 	
 	// Metodos
+	public String id() {
+		return String.valueOf(this.id);
+	}
+	
 	public String nome() {
 		return this.nome;
 	}
