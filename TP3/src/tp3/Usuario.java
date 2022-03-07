@@ -27,8 +27,8 @@ public class Usuario {
 	}
 	
 	// Metodos
-	public int id() {
-		return id;
+	public String id() {
+		return String.valueOf(this.id);
 	}
 	
 	public String nomecompleto() {
