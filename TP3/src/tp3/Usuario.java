@@ -14,7 +14,8 @@ public class Usuario {
 	private int kmPedalado;
 	
 	// Construtor
-	public Usuario (String nome, String sobrenome, String email, Endereco endereco, Telefone telefone, int cpf, Plano plano, int kmPedalado) {
+	public Usuario (int id, String nome, String sobrenome, String email, Endereco endereco, Telefone telefone, int cpf, Plano plano, int kmPedalado) {
+		this.id = id;
 		this.nome = nome;
 		this.sobrenome = sobrenome;
 		this.email = email;
@@ -26,12 +27,20 @@ public class Usuario {
 	}
 	
 	// Metodos
+	public int id() {
+		return id;
+	}
+	
 	public String nomecompleto() {
 		return (this.nome + " " + this.sobrenome);
 	}
 	
 	public String email() {
 		return this.email;
+	}
+	
+	public String endereco() {
+		return String.valueOf(this.endereco);
 	}
 	
 	public String telefone() {
