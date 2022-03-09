@@ -3,11 +3,11 @@ package tp3;
 public class Telefone {
 
 	// Atributos Telefone
-	private int ddd;
-	private int numero;
+	private long ddd;
+	private long numero;
 	
 	// Construtor
-	public Telefone(int ddd, int numero) {
+	public Telefone(long ddd, long numero) {
 		this.ddd = ddd;
 		this.numero = numero;
 	}
@@ -21,7 +21,7 @@ public class Telefone {
 		return String.valueOf(this.numero);
 	}
 	
-	public boolean editaTelefone(int ddd, int numero) {
+	public boolean editaTelefone(long ddd, long numero) {
 		this.ddd = ddd;
 		this.numero = numero;
 		

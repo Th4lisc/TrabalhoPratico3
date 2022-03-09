@@ -3,15 +3,15 @@ package tp3;
 public class Endereco {
 
 	// Atributos Endereco
-	private int cep;
+	private long cep;
 	private String pais;
 	private String estado;
 	private String bairro;
 	private String ruaQuadra;
-	private int numero;
+	private long numero;
 		
 	// Construtor
-	public Endereco(int cep, String pais, String estado, String bairro, String ruaQuadra, int numero) {
+	public Endereco(long cep, String pais, String estado, String bairro, String ruaQuadra, long numero) {
 		this.cep = cep;
 		this.pais = pais;
 		this.estado = estado;
@@ -45,7 +45,7 @@ public class Endereco {
 		return String.valueOf(this.numero);
 	}
 	
-	public boolean editaEndereco(int cep, String pais, String estado, String bairro, String ruaQuadra, int numero) {
+	public boolean editaEndereco(long cep, String pais, String estado, String bairro, String ruaQuadra, long numero) {
 		this.cep = cep;
 		this.pais = pais;
 		this.estado = estado;

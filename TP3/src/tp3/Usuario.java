@@ -3,18 +3,18 @@ package tp3;
 public class Usuario {
 	
 	// Atributos usuario
-	private int id;
+	private long id;
 	private String nome;
 	private String sobrenome;
 	private String email;
 	private Endereco endereco;
 	private Telefone telefone;
-	private int cpf;
+	private long cpf;
 	private Plano plano;
-	private int kmPedalado;
+	private long kmPedalado;
 	
 	// Construtor
-	public Usuario (int id, String nome, String sobrenome, String email, Endereco endereco, Telefone telefone, int cpf, Plano plano, int kmPedalado) {
+	public Usuario (long id, String nome, String sobrenome, String email, Endereco endereco, Telefone telefone, long cpf, Plano plano, long kmPedalado) {
 		this.id = id;
 		this.nome = nome;
 		this.sobrenome = sobrenome;
@@ -40,7 +40,7 @@ public class Usuario {
 	}
 	
 	public String endereco() {
-		return String.valueOf(this.endereco);
+		return String.valueOf(this.endereco.toString());
 	}
 	
 	public String telefone() {
@@ -64,7 +64,7 @@ public class Usuario {
 		return true;
 	}
 	
-	public boolean editaUsuario(String nome, String sobrenome, String email, Endereco endereco, Telefone telefone, int cpf, Plano plano, int kmPedalado) {
+	public boolean editaUsuario(String nome, String sobrenome, String email, Endereco endereco, Telefone telefone, long cpf, Plano plano, long kmPedalado) {
 		this.nome = nome;
 		this.sobrenome = sobrenome;
 		this.email = email;
