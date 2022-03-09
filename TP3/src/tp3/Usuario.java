@@ -40,7 +40,7 @@ public class Usuario {
 	}
 	
 	public String endereco() {
-		return String.valueOf(this.endereco.toString());
+		return String.valueOf(this.endereco.pais() + ", " + this.endereco.estado() + ", " + this.endereco.bairro() + ", " + this.endereco.ruaQuadra() + ", " + this.endereco.numero() + " - " + this.endereco.cep());
 	}
 	
 	public String telefone() {

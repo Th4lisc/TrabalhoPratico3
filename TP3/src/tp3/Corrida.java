@@ -1,20 +1,19 @@
 package tp3;
 
-import java.sql.Time;
 import java.util.Date;
 
 public class Corrida {
 
 	// Atributos
-	private int id;
+	private long id;
 	private Usuario usuario;
-	private Time tempoUso;
+	private long tempoUso;
 	private Date dataUso;
 	private Bicicleta bicicletaUtilizada;
-	private int kmPedalado;
+	private long kmPedalado;
 	
 	// Construtor
-	public Corrida(int id, Usuario usuario, Time tempoUso, Date dataUso, Bicicleta bicicletaUtilizada, int kmPedalado) {
+	public Corrida(long id, Usuario usuario, long tempoUso, Date dataUso, Bicicleta bicicletaUtilizada, long kmPedalado) {
 		this.id = id;
 		this.usuario = usuario;
 		this.tempoUso = tempoUso;
@@ -29,7 +28,7 @@ public class Corrida {
 	}
 	
 	public String usuario() {
-		return String.valueOf(this.usuario);
+		return String.valueOf(this.usuario.nomecompleto());
 	}
 	
 	public String tempoUso() {
@@ -41,7 +40,7 @@ public class Corrida {
 	}
 	
 	public String bicicletaUtilizada() {
-		return String.valueOf(this.bicicletaUtilizada);
+		return String.valueOf(this.bicicletaUtilizada.tipo());
 	}
 	
 	public String kmPedalado() {
@@ -53,7 +52,7 @@ public class Corrida {
 		return true;
 	}
 	
-	public boolean editaCorrida(int id, Usuario usuario, Time tempoUso, Date dataUso, Bicicleta bicicletaUtilizada, int kmPedalado) {
+	public boolean editaCorrida(long id, Usuario usuario, long tempoUso, Date dataUso, Bicicleta bicicletaUtilizada, long kmPedalado) {
 		this.id = id;
 		this.usuario = usuario;
 		this.tempoUso = tempoUso;

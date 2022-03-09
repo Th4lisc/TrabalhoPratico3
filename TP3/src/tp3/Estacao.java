@@ -27,7 +27,7 @@ public class Estacao {
 	}
 	
 	public String endereco() {
-		return String.valueOf(this.endereco);
+		return String.valueOf(this.endereco.pais() + ", " + this.endereco.estado() + ", " + this.endereco.bairro() + ", " + this.endereco.ruaQuadra() + ", " + this.endereco.numero() + " - " + this.endereco.cep());
 	}
 	
 	public String numVagas() {
